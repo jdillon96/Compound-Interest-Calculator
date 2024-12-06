@@ -1,0 +1,116 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #073b3a;
+}
+article {
+  text-align: center;
+  font-family: "Unlock";
+  color: white;
+  height: 100vh;
+}
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  padding-top: 20px;
+  margin: 0px;
+}
+section.input {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 3fr 4fr 5fr 3fr;
+  padding-bottom: 10px;
+}
+h2 {
+  font-size: 30px;
+  background-color: #0b6e4f;
+  padding: 10px;
+  margin: 0px;
+  border-bottom: 3px solid #08a045;
+}
+p,
+h2 {
+  grid-column: 1 / span 4;
+}
+p {
+  font-size: 25px;
+}
+input,
+select {
+  transition: 200ms;
+}
+section.output {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+section.output_box {
+  width: 45vw;
+  height: auto;
+}
+section.input,
+section.output_box {
+  border: 5px solid #08a045;
+  background-color: #6bbf59;
+}
+button {
+  height: 100px;
+  width: calc(100vw - 60px);
+  background-image: radial-gradient(#0b6e4f, #08a045, #6bbf59);
+  border: 1px solid #08a045;
+  font-size: 50px;
+  /* the button will not inherit font attributes from article */
+  color: white;
+  font-family: "Unlock";
+}
+h2,
+button {
+  text-shadow: 2px 2px 2px black;
+}
+h4 {
+  font-size: 30px;
+  padding: 20px;
+  margin: 0px;
+}
+
+button:hover {
+  animation: wiggle 2s linear forwards infinite;
+}
+input:hover,
+select:hover {
+  transform: scale(1.25);
+}
+
+@keyframes wiggle {
+  0% {
+    rotate: 0deg;
+    font-size: 50px;
+  }
+  25% {
+    rotate: 2deg;
+  }
+  50% {
+    rotate: 0deg;
+    font-size: 80px;
+  }
+  75% {
+    rotate: -2deg;
+  }
+  100% {
+    rotate: 0deg;
+    font-size: 50px;
+  }
+}
+
+.unlock-regular {
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
+}

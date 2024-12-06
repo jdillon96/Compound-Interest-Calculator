@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Compound Interest Calculator</title>
+    <link rel="stylesheet" href="CI.css" />
+    <script src="CI.js" defer></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Unlock&display=swap");
+    </style>
+  </head>
+  <body>
+    <article>
+      <header>
+        <img src="money.gif" alt="money" width="100" />
+        <h1>Compound Interest Calculator</h1>
+        <img src="money.gif" alt="money" width="100" />
+      </header>
+
+      <main>
+        <section class="input">
+          <h2>Step 1: Principal</h2>
+          <p>The principal is the amount of money you are starting with</p>
+          <span> </span>
+          <span>Principal ($)</span>
+          <input type="number" id="principal" />
+        </section>
+
+        <section class="input">
+          <h2>Step 2: Interest Rate</h2>
+          <p>The interest rate is how fast your money grows</p>
+          <span> </span>
+          <span>Interest Rate (<output id="intout"></output>%)</span>
+          <input
+            type="range"
+            id="interest"
+            value="2"
+            min="0.25"
+            max="50"
+            step="0.25"
+          />
+        </section>
+
+        <section class="input">
+          <h2>Step 3: Frequency</h2>
+          <p>The frequency is how often your money compounds</p>
+          <span> </span>
+          <span>How Often</span>
+          <select id="frequency">
+            <option value="0">---</option>
+            <option value="1">Annually</option>
+            <option value="2">Biannualy</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+            <option value="365">Daily</option>
+          </select>
+        </section>
+
+        <section class="input">
+          <h2>Step 4: Time</h2>
+          <p>The time is how long you let your money accrue interest</p>
+          <span> </span>
+          <span>Number of Years</span>
+          <input type="number" id="time" />
+        </section>
+
+        <button id="calculate">Calculate!</button>
+
+        <section class="output">
+          <section class="output_box">
+            <h2>Money Earned</h2>
+            <p>$<output id="profit"></output></p>
+          </section>
+
+          <section class="output_box">
+            <h2>Total Money</h2>
+            <p>$<output id="total"></output></p>
+          </section>
+        </section>
+      </main>
+
+      <footer>
+        <h4>© 2024</h4>
+        <h4>
+          <a
+            href="https://codesandbox.io/p/sandbox/compound-interest-calculator-yymm9y"
+            >Code Sandbox</a
+          >
+        </h4>
+      </footer>
+    </article>
+  </body>
+</html>
