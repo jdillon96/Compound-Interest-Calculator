@@ -5,7 +5,10 @@ const TimeBox = document.querySelector("#time");
 const profitOutput = document.querySelector("#profit");
 const totalOutput = document.querySelector("#total");
 const interestOutput = document.querySelector("#intout");
-const Button = document.querySelector("#calculate");
+
+[PrincipalBox, InterestSlider, FrequencyDropdown, TimeBox].forEach((input) => {
+  input.addEventListener("input", updateCash);
+});
 
 interestOutput.textContent = InterestSlider.value; //shows the initial interest rate
 InterestSlider.addEventListener("input", (e) => {

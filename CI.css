@@ -33,6 +33,7 @@ h2 {
   padding: 10px;
   margin: 0px;
   border-bottom: 3px solid #08a045;
+  text-shadow: 2px 2px 2px black;
 }
 p,
 h2 {
@@ -60,27 +61,13 @@ section.output_box {
   border: 5px solid #08a045;
   background-color: #6bbf59;
 }
-button {
-  height: 100px;
-  width: calc(100vw - 60px);
-  background-image: radial-gradient(#0b6e4f, #08a045, #6bbf59);
-  border: 1px solid #08a045;
-  font-size: 50px;
-  /* the button will not inherit font attributes from article */
-  color: white;
-  font-family: "Unlock";
-}
-h2,
-button {
-  text-shadow: 2px 2px 2px black;
-}
 h4 {
   font-size: 30px;
   padding: 20px;
   margin: 0px;
 }
 
-button:hover {
+h1:hover {
   animation: wiggle 2s linear forwards infinite;
 }
 input:hover,
