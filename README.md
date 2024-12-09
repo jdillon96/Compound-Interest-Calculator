@@ -6,4 +6,4 @@ It accomplishes this by having the user input the principal, interest rate, how 
 
 The web app returns the amount of money that was accumulated and total amount once the "Calculate!" button is clicked.
 
-Run this program here: (https://yymm9y.csb.app/)
+Run this program here: ([https://yymm9y.csb.app/](https://jdillon96.github.io/Compound-Interest-Calculator/))
